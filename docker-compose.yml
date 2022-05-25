@@ -7,6 +7,11 @@ services:
         ports:
             - 5901:5901
             - 6901:6901
+        environment: 
+            - VNC_PASSWD=uncleluo
+            - GEOMETRY=1024x768
+            - TZ=Asia/Shanghai
+            - DEPTH=24
         volumes:
             - /home/headless/Documents/
             - /home/headless/Desktop/
